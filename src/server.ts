@@ -28,7 +28,7 @@ class Server {
   }
 
   private routes() {
-    this.app.use('/api', new APIRoutes().router)
+    this.app.use('/api/v1', new APIRoutes().router)
   }
 }
 

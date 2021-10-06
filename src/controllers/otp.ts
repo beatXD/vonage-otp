@@ -1,9 +1,10 @@
 import Vonage from '@vonage/server-sdk'
 import { Request, Response } from 'express'
+import { configs } from '../configs/environment'
 
 const vonage = new Vonage({
-  apiKey: 'a4475f17',
-  apiSecret: 'iGGf8k3yQ6sLTWMc'
+  apiKey: configs.API_KEY,
+  apiSecret: configs.API_SECRET
 })
 
 class OtpController {
